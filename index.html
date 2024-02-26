@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Explore Hub</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .card-container {
+        display: flex;
+        overflow: hidden;
+        width: 80%;
+        margin: auto;
+    }
+
+    .card {
+        min-width: 200px;
+        margin: 10px;
+    }
+
+    .arrow {
+        cursor: pointer;
+        font-size: 24px;
+    }
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <h1>Explore Hub</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#homee">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#dest">Destinations</a></li>
+          <li><a href="#transport">Transportation</a></li>
+          <li><a href="#bookings">Bookings</a></li>
+          <li><a href="#hotels">Hotels</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="" class="btn-tour">Login</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header>
+  <section id="homee" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">EXPLORE HUB</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Embark on a journey to discover the world's hidden gems with us</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-right text-lg-start">
+          <div class="login-container">
+            <h2>Login to Explore Hub</h2>
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button class="login-btn" type="submit">Log In</button>
+            </form>
+            <div class="forgot-password">
+                <a href="forgot-password.php">Forgot Password?</a><br/>
+                <p style="border:1px solid black">Don't have an account? <a href="register.php">Register</a></p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p>Learn More <span>About Us</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(https://st.depositphotos.com/1000619/3513/i/450/depositphotos_35139317-stock-photo-photos-from-travels-to-different.jpg) ;" data-aos="fade-up" data-aos-delay="150">
+            
+          </div>
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Welcome to EXPLORE HUB –Where every journey begins
+              </p>
+              <p>At Explore Hub, we believe that travel is not just about visiting new places; it's about embarking on transformative journeys, discovering new cultures, and creating unforgettable memories.
+
+                Founded with a passion for exploration and a commitment to wanderlust, Explore Hub is your gateway to the world's most captivating destinations. Whether you're an intrepid adventurer seeking adrenaline-fueled escapades, a culture enthusiast eager to immerse yourself in local traditions, or a leisure traveler yearning for relaxation in idyllic settings, we have something for every type of explorer.
+                
+                Our mission is simple: to inspire, inform, and empower travelers to experience the wonders of the world. From breathtaking landscapes to vibrant cities, from serene beaches to rugged mountains, our platform is your go-to resource for travel inspiration, insightful guides, and curated experiences that cater to your wanderlust.
+                
+                What sets Explore Hub apart is our dedication to authenticity, sustainability, and meaningful travel experiences. We work closely with local communities, eco-friendly partners, and expert guides to ensure that your adventures are not only enriching for you but also beneficial for the destinations you visit.
+                
+                Whether you're planning your next getaway, seeking travel tips, or simply daydreaming about your next adventure, Explore Hub is here to fuel your wanderlust and turn your travel dreams into reality.</p>
+      
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  
+    <section id="dest" class="menu">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <p>TOP PLACES<span> To visit in INDIA</span></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-ce nter" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tajj">
+              <h4>Taj Mahal</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#gold">
+              <h4>Golden Temple</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#myso">
+              <h4>Mysore Palace</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#vara">
+              <h4>Varanasi Temple</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="tajj">
+
+            <div class="tab-header text-center">
+              <h3>Taj Mahal</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="...">
+                      </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <h4 class="mb-3">Taj Mahal</h4>
+                <p class="ingredients">
+                  The Taj Mahal is considered to be the greatest architectural
+                        achievement in the whole range of Indo-Islamic architecture. Its
+                        recognised architectonic beauty has a rhythmic combination of solids
+                        and voids, concave and convex and light shadow; such as arches and
+                        domes further increases the aesthetic aspect. Not a piece of
+                        architecture, as other buildings are, but the proud passions of an
+                        emperor’s love wrought in living stones
+                </p>
+                <button class="btn btn-success">Book Now</button>
+                
+          </div>
+        </div>
+          <div class="tab-pane fade" id="gold">
+
+            <div class="tab-header text-center">
+              <h3>Golden Temple</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div id="goldenTempleCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#goldenTempleCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#goldenTempleCarousel" data-slide-to="1"></li>
+                    <li data-target="#goldenTempleCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple1-img.png" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple2-img.png" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple3-img.png" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#goldenTempleCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#goldenTempleCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+                  
+            
+              <h4 class="mb-3">Golden Temple</h4>
+              <p class="ingredients">
+                The Golden Temple, also known as Harmandir Sahib is a gurdwara
+                located in the city of Amritsar, Punjab, India. There are many
+                places to visit Near Golden Temple.
+              </p>
+              <button class="btn btn-success">Book Now</button>
+              
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="myso">
+
+            <div class="tab-header text-center">
+              
+              <h3>Mysore Palace</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div id="mysorePalaceCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mysorePalaceCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mysorePalaceCarousel" data-slide-to="1"></li>
+                    <li data-target="#mysorePalaceCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace1-img.png" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace2-img.png" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace3-img.png" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#mysorePalaceCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mysorePalaceCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+                  
+            
+              <h4 class="mb-3">Mysore Palace</h4>
+              <p class="ingredients">
+                Mysore Palace, also called Amba Vilas Palace, is one of the most magnificent and largest palaces in India. Situated in the southern state of Karnataka, it used to be the official residence of the Wodeyar Dynasty, the rulers of Mysore from 1399 to 1950. The grand palace stands tall in the heart of Mysore city and attracts visitors from across the world. Being one of the prime attractions in India after the Taj Mahal, it certainly deserves a place in every traveler’s bucket list.
+              </p>
+              <button class="btn btn-success">Book Now</button>
+            </div>
+            </div>
+
+          <div class="tab-pane fade" id="vara">
+
+            <div class="tab-header text-center">
+              
+              <h3>Varanasi Temple</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div id="varanasiTempleCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#varanasiTempleCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#varanasiTempleCarousel" data-slide-to="1"></li>
+                    <li data-target="#varanasiTempleCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi1-img.png" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi2-img.png" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi3-img.png" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#varanasiTempleCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#varanasiTempleCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+                  
+            
+              <h4 class="mb-3">Varanasi Temple</h4>
+              <p class="ingredients">
+                Sri Kashi Vishwanath Temple also known as the Golden Temple, it is dedicated to Lord Shiva, the presiding deity of the city. Varanasi is Said to be the point at which the first jyotirlinga, the fiery pillar of light by which shiva manifested has supremacy over others gods, broke through the Earth’s crust and flared towards the heavens. More than the Gaths and even the Ganga, the Shivalinga installed in the temple remains the devotional focus of Varanasi.
+              </p>
+              <button class="btn btn-success">Book Now</button>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+  <section id="bookings">
+    <div class="section-header">
+      <p>TOP <span>Bookings</span></p>
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+      <div class="tour-card">
+              <img src="https://1.bp.blogspot.com/-ZQANzOiGGGA/YHXN-6T6WxI/AAAAAAAAAfE/8An9SJJ50Bwk2UK7d_v2_7tVyVuUP0foACLcBGAsYHQ/s2048/Rushikonda_beach_view_001.jpg" class="tour-image">
+              <div class="tour-details">
+                  <div class="tour-title">Tour of visakhapatnam</div>
+                  <div class="tour-rating">958 likes</div>
+                  <div class="tour-price">₹11,062 per group</div>
+                  <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5"></label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4"></label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3"></label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2"></label>
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1"></label>
+      </div>
+              </div>
+          </div>
+       <div class="tour-card">
+              <img src="https://rochesfleuries.com/wp-content/uploads/2019/09/visite-taj-mahal.jpg" class="tour-image">
+              <div class="tour-details">
+                  <div class="tour-title"> Sightseeing Tour of agra</div>
+                  <div class="tour-rating">1.4k likes</div>
+                  <div class="tour-price">₹9,410 per adult</div>
+                  <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5"></label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4"></label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3"></label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2"></label>
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1"></label>
+      </div>
+              </div>
+    </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+      <div class="tour-card">
+        <img src="https://media.istockphoto.com/id/1145422105/photo/eiffel-tower-aerial-view-paris.jpg?s=2048x2048&w=is&k=20&c=i3FwinI2s_TAoJOCa72v2_1PQTXeoUFYEFZe0rgFoac=" class="tour-image">
+        <div class="tour-details">
+            <div class="tour-title">visiting tour of paris</div>
+            <div class="tour-rating">4.1k likes</div>
+            <div class="tour-price">₹35,332 per adult</div>
+            <div class="rating">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5"></label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4"></label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3"></label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2"></label>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1"></label>
+</div>
+        </div>
+    </div>
+    <div class="tour-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Singapore_Merlion.jpg/220px-Singapore_Merlion.jpg" class="tour-image">
+      <div class="tour-details">
+          <div class="tour-title"> Visiting tour of singapore</div>
+          <div class="tour-rating">3.2k likes</div>
+          <div class="tour-price">₹26,410 per adult</div>
+          <div class="rating">
+  <input type="radio" id="star5" name="rating" value="5">
+  <label for="star5"></label>
+  <input type="radio" id="star4" name="rating" value="4">
+  <label for="star4"></label>
+  <input type="radio" id="star3" name="rating" value="3">
+  <label for="star3"></label>
+  <input type="radio" id="star2" name="rating" value="2">
+  <label for="star2"></label>
+  <input type="radio" id="star1" name="rating" value="1">
+  <label for="star1"></label>
+</div>
+      </div>
+  </div>
+
+    </div>
+  </section>
+
+    <section id="transport" class="chefs section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Transportation</h2>
+          <p> <span>BOOK</span> NOW</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="https://images.pexels.com/photos/164589/pexels-photo-164589.jpeg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Flight</h4>
+                <button class="btn btn-success">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="https://images.pexels.com/photos/2942172/pexels-photo-2942172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Bus</h4>
+                <button class="btn btn-success">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="https://images.pexels.com/photos/159148/regional-train-rail-cars-platform-deutsche-bahn-159148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Train</h4>
+                <button class="btn btn-success">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <section id="hotels" class="chefs section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>HOTELS</h2>
+          <p> <span>ACCOMODATIONS</span></p>
+        </div>
+        
+
+       
+        <div class="arrow" id="left-arrow"><</div>
+      <div class="card-container" id="card-container">
+         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/d3/b2/4f/exterior-view.jpg?w=1200&h=-1&s=1" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Mumbai</h4>
+              <p>Starts from 2,000/-</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="https://www.momondo.in/himg/20/b9/39/leonardo-139787-147998592-210539.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Chennai</h4>
+              <p>Starts from 1000/-</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/1f/14/45/the-fullerton-hotel-singapore.jpg?w=2000&h=-1&s=1" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Singapore</h4>
+              <p>Starts from 20,000/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="https://www.ahstatic.com/photos/7535_ho_00_p_1024x768.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Visakhapatnam</h4>
+              <p>Starts From 1500/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="https://htl-img-res-new.s3.ap-south-1.amazonaws.com/1308/20231115/main.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Hyderabad</h4>
+              <p>Starts From 3,000/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="https://media.hotelscombined.com/HI126878473.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Paris</h4>
+              <p>Starts from 25,000/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="https://www.telegraph.co.uk/content/dam/Travel/hotels/asia/india/the-leela-palace-bangalore-india-p.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Bangalore</h4>
+              <p>Starts From 3,500/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/9c/c1/3baef7f4ac2615b75a4aa7907c102a7460779c759eb79de2eb7e31f74819.jpeg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Kolkata</h4>
+              <p>Starts From 2000/-</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>  
+      <div class="arrow" id="right-arrow">></div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="contact" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+
+        <div class="col-lg-3 col-md-6 d-flex flex-row justify-content-center">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              VISHAKHAPATNAM<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Bookings</h4>
+            <p>
+              <strong>Phone:</strong>986543210<br>
+              <strong>Email:</strong> ExploreHub@gitam.in<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h2>Feedback Form</h2>
+          <form action="submit_feedback.php" method="POST">
+              <label for="name">Your Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+              
+              <label for="email">Your Email:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+              
+              <label for="message">Feedback:</label><br>
+              <textarea id="message" name="message" rows="4" required></textarea><br><br>
+              
+              <input type="submit" value="Submit">
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;  <strong><span>Explore Hub</span></strong>
+      </div>
+      <div class="credits">
+        All Copy rights reserved
+      </div>
+    </div>
+
+  </footer>
+  
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
